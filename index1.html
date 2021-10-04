@@ -7,20 +7,46 @@
     <title>CSS4 & CSS5</title>
     <style>
         *{
-            margin: 5px;
-            padding: 0px;
+            margin: 0;
+            padding: 0;
             box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 4px;
         }
-     div.parent div:nth-child(2){
-         background-color: lime;
-     }
+        h2{
+            margin: 5px;
+            color: white;
+            background-color: orange;
+        }
+        h2:hover{
+            background-color: crimson;
+            cursor: progress;
+        }
+        div::selection{
+            background: lime;
+        }
+        input:focus{
+            background-color: pink;
+            color: red;
+            font-size: 2rem;
+        }
+        h2::after{
+            content: "I'm a after";
+            font-size: 0.5rem;
+            color: red;
+            position: relative;
+        }
+        h2::before{
+            content: "I'm a after";
+            font-size: 0.5rem;
+            color: rgb(0, 0, 0);
+            position: relative;
+        }
     </style>
 </head>
 <body>
-   <div class="parent">
-        <div>I'm a First div</div>
-        <div>I'm a Second div</div>
-        <div>I'm a Third div</div>
-    </div>
+   <h2>I'm a heading</h2>
+   <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quas, beatae aspernatur soluta placeat sint vel sed sit, possimus ipsum temporibus? Debitis modi repellat earum eos doloribus fugit ex quisquam.</div>
+   <input type="text">
 </body>
 </html>
