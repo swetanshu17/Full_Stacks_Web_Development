@@ -11,32 +11,25 @@
             padding: 0px;
             box-sizing: border-box;
         }
-        .background{
-            color: #ffffff;
-        }
-        h1.background{
-            background-color: blueviolet;
-        }
-        h2.background{
-            background-color: cyan;
-        }
-        h2.background#unique{
-            background-color: crimson;
-        }
-        h3.background{
-            background-color: orange;
-        }
-        span.background{
-            background-color: black;
-        }
+     div.parent div{
+         background-color: lime;
+     }
+     div.parent h1{
+         background-color: crimson;
+     }
+     div.parent h2 {
+         background-color: cornflowerblue;
+     }
     </style>
 </head>
 <body>
-    <h1 class="background">Heading One</h1>
-    <h2 class="background" id="unique">Heading Two</h2>
-    <h2 class="background">Second Heading Two</h2>
-    <h3 class="background">Heading Three</h3>
-
-    <span class="background">I am swetanshu</span>
+   <div class="parent">
+        <div>I'm a div</div>
+        <h1>I'm a Heading</h1>
+        <h2>I'm a Heading</h2>
+        <h1>I'm a Heading</h1>
+        <h2>I'm a Heading</h2>
+        <div>I'm a div again</div>
+    </div>
 </body>
 </html>
