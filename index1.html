@@ -13,40 +13,28 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             margin: 4px;
         }
-        h2{
-            margin: 5px;
-            color: white;
-            background-color: orange;
+        div.parent{
+            background-color: black;
+            min-height: 200px;
         }
-        h2:hover{
+        div.child{
             background-color: crimson;
-            cursor: progress;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(1,-0.59, 0, 1.49);
         }
-        div::selection{
-            background: lime;
-        }
-        input:focus{
-            background-color: pink;
-            color: red;
-            font-size: 2rem;
-        }
-        h2::after{
-            content: "I'm a after";
-            font-size: 0.5rem;
-            color: red;
-            position: relative;
-        }
-        h2::before{
-            content: "I'm a after";
-            font-size: 0.5rem;
-            color: rgb(0, 0, 0);
-            position: relative;
+        div.parent:hover div.child{
+            background-color: aliceblue;
+            transform: translateX(200px);
         }
     </style>
 </head>
 <body>
-   <h2>I'm a heading</h2>
-   <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quas, beatae aspernatur soluta placeat sint vel sed sit, possimus ipsum temporibus? Debitis modi repellat earum eos doloribus fugit ex quisquam.</div>
-   <input type="text">
+   <div class="parent">
+    <div class="child"></div>
+   </div>
+   
 </body>
 </html>
