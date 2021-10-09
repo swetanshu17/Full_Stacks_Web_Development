@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>git push code</title>
+    <title>TODO List</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            position: relative;
+        }
+        div.parent{
+            background-color: black;
+            height: 500px;
+        }
+        div.child{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation: 3s move ease-in-out;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            border-radius: 50%;
+        }
+        div.child-2{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            animation: 3s move ease-in-out;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            border-radius: 50%;
+            animation-delay: 3s;
+        }
+        @keyframes move {
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translate(300px,200px);
+                background-color: cyan;
+            }
+            100%{
+                transform: translateY(400px);
+                background-color: crimson;
+            }
+        }
+    </style>
 </head>
 <body>
-    <p>Swetanshu Agrawal</p>
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child-2"></div>
+    </div>
 </body>
 </html>
