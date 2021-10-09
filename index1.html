@@ -11,26 +11,42 @@
             color: white;
             font-size: 2rem;
         }
-        @media (max-width: 700px){
-            div.parent{
-                background-color: blueviolet;
-                color: wheat;
-                font-size: 1rem;
-            }
+     div.parent{
+         display: flex;
+         align-items: stretch;
+         background-color: black;
+         height: 100vh;
+     }
+     div.child-2{
+        background-color: crimson;
+        flex-basis: 20%;
+    }
+     div.child{
+         background-color: orange;
+         flex-basis: 80%;
+     }
+    @media(max-width: 450px){
+        div.child-2{
+            flex-basis: 80%;
         }
-        @media (max-width: 500px){
-            div.parent{
-                background-color: orange;
-                color: wheat;
-                font-size: 0.8rem;
-            }
+        div.child{
+            flex-basis: 10%;
         }
+    }
+    @keyframes expand{
+        0%{
+            flex-basis: 0%;
+        }
+        100%{
+            flex-basis: 100px;
+        }
+    }
     </style>
 </head>
 <body>
     <div class="parent">
-        <h1>I'm a Headding</h1>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti cum quod omnis, pariatur quos natus quasi dolorem. Fugiat similique optio quas vitae asperiores? Voluptatum neque quisquam voluptatem sequi ipsa.
+    <div class="child"></div>
+    <div class="child-1"></div>
     </div>
 </body>
 </html>
