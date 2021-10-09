@@ -2,44 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
-    position: relative;
+    list-style: none;
+    text-decoration: none;
+    color: unset;
+    font-family: "poppins";
 }
-div.parent{
-    background-color: black;
-    height: 500px;
+header{
+    background-image: url("../images/day.jpeg");
+    height: 300px;
+    background-size: cover;
+    background-position: center;
 }
-div.child{
-    width: 100px;
-    height: 100px;
-    background-color: orange;
-    animation: 3s move ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    border-radius: 50%;
+img.social{
+    width: 20px;
+    margin: 0px 10px;
 }
-div.child-2{
-    width: 100px;
-    height: 100px;
-    background-color: orange;
-    animation: 3s move ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    border-radius: 50%;
-    animation-delay: 3s;
-}
-@keyframes move {
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translate(300px,200px);
-        background-color: cyan;
-    }
-    100%{
-        transform: translateY(400px);
-        background-color: crimson;
-    }
+footer{
+    background-color: #f5eded;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    font-size: 1.2rem;
+    position: absolute;
+    padding: 10px;
+    bottom: 0px;
+    width: 100%;
 }
